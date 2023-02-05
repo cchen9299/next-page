@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const Index = () =>{
     const [sum, setSum] = useState(0)
@@ -6,7 +6,10 @@ const Index = () =>{
     return (
     <div>
         hello world
-        <button onClick={()=>{setSum(sum++)}}>add something</button>
+        <button onClick={()=>{
+            const num = sum + 1
+            setSum(num)
+            }}>add something</button>
         {sum}
     </div>
     )
