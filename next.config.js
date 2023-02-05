@@ -20,6 +20,8 @@ module.exports = {
     return {
       "/": { page: "/" },
       "/hello": { page: "/api/hello.js" },
+      "/helloo": { page: "/api/hello" },
+      "/api": { page: "/api" },
     }
   },
 }
