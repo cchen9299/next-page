@@ -14,4 +14,11 @@ if (isGithubActions) {
 module.exports = {
   assetPrefix: assetPrefix,
   basePath: basePath,
+  exportPathMap: function () {
+    return {
+      "/": { page: "/" },
+      "/api": { page: "/api" },
+      "/hello": { page: "/api/hello.js" },
+    }
+  },
 }
