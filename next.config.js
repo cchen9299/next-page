@@ -22,6 +22,7 @@ module.exports = {
       "/hello": { page: "/api/hello.js" },
       "/helloo": { page: "/api/hello" },
       "/api": { page: "/api" },
+      "/other": { page: "/OtherRoute" },
     }
   },
 }
